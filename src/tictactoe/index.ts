@@ -44,7 +44,7 @@ export async function tictactoe(props: data) {
     }
 
     let activeplayer = player1;
-    msg.edit(`<@${activeplayer}>'s turn\n${gameboard.join("")}`);
+    msg.edit(`${activeplayer}'s turn\n${gameboard.join("")}`);
 
     const filter = (reaction, user) => !user.bot && user.id == activeplayer && actemo.includes(reaction.emoji.name);
     const collector = msg.createReactionCollector(filter, {time: 30000})
@@ -86,7 +86,7 @@ export async function tictactoe(props: data) {
         }
         if (win) {
             let winner = gameboard[wint].startsWith(pieces.player1)?player1:player2;
-            a.message.edit(`<@${winner}> has won!'\n${gameboard.join("")}`);
+            a.message.edit(`${winner} has won!'\n${gameboard.join("")}`);
             collector.stop();
             return;
         }
@@ -97,7 +97,7 @@ export async function tictactoe(props: data) {
         }
         actemo.splice(actemo.indexOf(a.emoji.name), 1);
         activeplayer = activeplayer==player1?player2:player1;
-        a.message.edit(`<@${activeplayer}>'s turn\n${gameboard.join("")}`);
+        a.message.edit(`${activeplayer}'s turn\n${gameboard.join("")}`);
         collector.resetTimer();
     })
     collector.on("end",(a,b)=>{
