@@ -49,6 +49,6 @@ tictactoe({
 
 > Output:
 >
-> ![ping](./images/tictactoe.png)
+> ![tictactoe](./images/tictactoe.png)
 
 
