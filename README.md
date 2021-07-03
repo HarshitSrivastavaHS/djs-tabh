@@ -32,7 +32,7 @@ ping({
 
 > Output:
 >
-> ![ping](./images/ping.png)
+> ![ping](https://github.com/TechAllByHarshit/djs-tabh/blob/main/images/ping.png)
 
 - `tictactoe`
 
@@ -49,6 +49,6 @@ tictactoe({
 
 > Output:
 >
-> ![tictactoe](./images/tictactoe.png)
+> ![tictactoe](https://github.com/TechAllByHarshit/djs-tabh/blob/main/images/tictactoe.png)
 
 
