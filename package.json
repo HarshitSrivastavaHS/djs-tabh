@@ -1,6 +1,6 @@
 {
   "name": "djs-tabh",
-  "version": "1.0.6",
+  "version": "1.0.5",
   "description": "A Discord.js package with many utilities",
   "main": "./lib/index.js",
   "types": "./lib/main.d.ts",
